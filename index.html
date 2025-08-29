@@ -136,8 +136,106 @@
     </main>
 
     <footer>
+        <nav>
+            <h3>Institucional</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#perguntas">Perguntas Frequentes</a></li>
+                <li><a href="#fale">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h3>Ajuda</h3>
+            <ul>
+                <li><a href="trocas">Trocas e devoluções</a></li>
+                <li><a href="termos">Termos de uso</a></li>
+                <li><a href="politica">politica e privacidade</a></li>
+                <li><a href="qualidade">Padrão de qualidade</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h3>Endereço</h3>
+            <ul>
+                <li>Rua Das Hortências -100</li>
+                <li>Rio de Janeiro - RJ</li>
+                <li>Brasil</li>
+                <li><a href="#padrao">(99) 0102-0304</a></li>
+                <li>contatoecomerce@ajdev.com.br</li>
+            </ul>
+        </nav>
+
         <p>&copy; 2025 E-commerce Master. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- [1] -->
+    <div id="modal-1" class="modal" aria-hidden="true">
+
+        <!-- [2] -->
+        <div tabindex="-1" data-micromodal-close>
+
+            <!-- [3] -->
+            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+
+
+                <header>
+                    <h2 id="modal-1-title">
+                        Carrinho de compras
+                    </h2>
+
+                    <!-- [4] -->
+                    <button aria-label="Close modal" data-micromodal-close></button>
+                </header>
+
+                <div id="modal-1-content">
+                   <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./assets/images/camisa branca frente.jpg" alt="Camisa Branca AJR DEV"></td>
+                            <td>Camisa Branca AJR DEV</td>
+                            <td>R$60,00</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>R$60,00</td>
+                            <td><button id="deletar">Remover</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/images/camisa preta.jpg" alt="Camisa Preta AJR DEV"></td>
+                            <td>Camisa Preta AJR DEV</td>
+                            <td>R$60,00</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>R$60,00</td>
+                            <td><button id="deletar">Remover</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/images/caneca branca.jpg" alt="Caneca Branca AJR DEV"></td>
+                            <td>Caneca Branca AJR DEV</td>
+                            <td>R$60,00</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>R$60,00</td>
+                            <td><button id="deletar">Remover</button></td>
+                        </tr>
+                    </tbody>
+                   </table>
+                   <div>
+                        <span id="total-carrinho">Total: R$180,00</span>
+                        <button">Finalizar Compra</button>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </body>
 
 </html>
